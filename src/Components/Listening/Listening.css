@@ -1,0 +1,47 @@
+.listening-main {
+  height: 100%;
+  width: 100%;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.listening-Main-Content {
+  height: auto;
+  width: 90%;
+  /* background-color: aliceblue; */
+  padding: 10px;
+  border: 1px solid #f6f6f6;
+}
+.listening-Main-Content-Questions {
+}
+.listening-Main-Content-Questions h2 {
+  font-family: "Source Serif 4", serif;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.listening-Main-Content-QuestionsDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.listening-Main-Content-QuestionsDiv-P {
+  font-family: "Source Serif 4", serif;
+  font-style: italic;
+}
+.listening-Main-Content-QuestionsDiv-Options-P,
+.listening-Main-Content-QuestionsDiv-Options-P label,
+.listening-Main-Content-QuestionsDiv-Options-P input,
+.listening-Main-Content-QuestionsDiv-Options-P div p {
+  font-family: "Source Serif 4", serif;
+  font-optical-sizing: auto;
+  /* font-weight: ; */
+  font-style: normal;
+}
+.listening-Main-Content-QuestionsDiv-Options-P label input {
+  margin-right: 5px;
+}
+.align-checkbox-input {
+  display: block;
+}

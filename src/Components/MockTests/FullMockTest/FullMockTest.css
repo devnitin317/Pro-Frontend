@@ -1,0 +1,40 @@
+.fullMockTest-main {
+  /* background-color: aqua; */
+  width: 95%;
+}
+.fullMockTest-main-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  justify-items: center;
+  margin-top: 1rem;
+}
+@media (min-width: 730px) and (max-width: 1050px) {
+  .fullMockTest-main-content {
+    grid-template-columns: repeat(3, 0.5fr);
+    /* gap: 1rem; */
+    /* margin-right: 9rem; */
+    width: 100%;
+    /* background-color: aqua; */
+    padding: 35px;
+  }
+  
+}
+@media screen and (max-width: 914px) {
+    .fullMockTest-main-content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (max-width: 480px) {
+    /* .fullMockTest-main{
+        position: absolute;
+        top: 132px;
+    } */
+    .fullMockTest-main{
+        width: 100%;
+    }
+    .fullMockTest-main-content {
+      grid-template-columns: repeat(1, 100%);
+      justify-content: center;
+    }
+  }

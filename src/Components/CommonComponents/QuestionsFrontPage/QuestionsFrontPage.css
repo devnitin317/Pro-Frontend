@@ -1,0 +1,23 @@
+.questionsFrontPage-main-content-btn{
+    background-color: rgb(144, 200, 200);
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.questionsFrontPage-main-content{
+    background-color: antiquewhite;
+    height: 250px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.questionsFrontPage-main{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}

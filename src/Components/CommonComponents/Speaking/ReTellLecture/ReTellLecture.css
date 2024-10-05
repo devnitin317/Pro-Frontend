@@ -1,0 +1,29 @@
+.reTellLecture-Main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reTellLecture-Content{
+    height: 350px;
+    width: 80%;
+    /* background-color: aliceblue; */
+    display: flex;
+    /* align-items: center; */
+    flex-wrap: nowrap;
+    gap: 1rem;
+    justify-content: center;
+}
+.reTellLecture-image{
+    height: 93%;
+    width: 60%;
+    /* background-color: antiquewhite */
+}
+.reTellLecture-audioAndRec{
+    height: 50%;
+    width: 50%;
+    /* background-color: beige; */
+}
+.reTellLecture-img img{
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,4 @@
+.reading-main-content-options {
+  display: flex;
+  flex-direction: column;
+}

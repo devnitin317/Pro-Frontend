@@ -1,0 +1,11 @@
+.practiceReadAloud-main-content-question *{
+    font-family: "Source Serif 4", serif;
+    font-style: normal;
+}
+.practiceReadAloud-main-content-question-heading{
+    font-style: italic;
+}
+.practiceReadAloud-main-content-question select{
+    margin: 2px 5px 0px 5px;
+    padding: 1px;
+}

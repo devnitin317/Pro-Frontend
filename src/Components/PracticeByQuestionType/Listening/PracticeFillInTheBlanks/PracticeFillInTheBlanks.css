@@ -1,0 +1,7 @@
+.practiceReadAloud-main-content-question-para p,.practiceReadAloud-main-content-question-para input {
+    font-family: "Source Serif 4", serif;
+    font-style: normal;
+}
+.practiceReadAloud-main-content-question-para input{
+    outline: none;
+}

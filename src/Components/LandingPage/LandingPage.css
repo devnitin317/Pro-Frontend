@@ -1,0 +1,318 @@
+.landingPage-main {
+  height: auto;
+  /* width: 100vw; */
+  /* background-color: aqua; */
+  overflow: scroll;
+}
+.landingPage-content {
+  width: 100%;
+  height: 100vh;
+  /* background-color: antiquewhite; */
+  /* overflow: scroll; */
+}
+.landingPage-content-nav {
+  height: 70px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.landingPage-content-nav-left {
+  width: 20%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  /* background-color: rgb(66, 66, 171); */
+}
+.landingPage-content-nav-right {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  /* background-color: rgb(174, 74, 74); */
+}
+.landingPage-content-nav-right-links {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.landingPage-content-nav-right-links-a {
+  color: #636363;
+  font-weight: 600;
+}
+.landingPage-content-nav-right-links-a:hover {
+  text-decoration: none;
+  color: #4caf4f;
+}
+.landingPage-content-nav-right-button {
+  font-size: 12px;
+  padding: 8px 30px;
+  background-color: #4caf4f;
+  outline: none;
+  border: none;
+  color: #fff;
+}
+.landingPage-content-nav-right-button:hover {
+  transform: scale(1.05);
+  outline: none;
+  border: none;
+}
+.landingPage-content-nav-right-user-email {
+  margin-right: 25px;
+}
+.landingPage-content-nav-right-user-button {
+  padding: 0px 16px;
+  background-color: #f96262;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  outline: none;
+}
+.landingPage-content-nav-right-user-button:hover {
+  outline: none;
+  border: none;
+  transform: scale(1.05);
+}
+.landingPage-content-heroSection {
+  height: 500px;
+  background-color: #f5f7fa;
+  display: flex;
+}
+.landingPage-content-heroSection-text {
+  width: 50%;
+  padding: 50px;
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 1rem;
+}
+.landingPage-content-heroSection-image {
+  width: 50%;
+  -webkit-mask-image: linear-gradient(to left, black 45%, transparent);
+}
+.landingPage-content-plansSection-top-span {
+  color: #776ec0;
+  font-weight: 600;
+}
+.landingPage-content-heroSection-image img {
+  width: 100%;
+  height: 100%;
+}
+.landingPage-content-heroSection-button {
+  width: 32%;
+  font-size: 19px;
+  padding: 8px 30px;
+  background-color: #4caf4f;
+  outline: none;
+  border: none;
+  color: #fff;
+}
+.landingPage-content-heroSection-button:hover {
+  transform: scale(1.05);
+  outline: none;
+  border: none;
+}
+.landingPage-content-plansSection {
+  min-height: 350px;
+  margin-top: 40px;
+  /* background-color: burlywood; */
+}
+.landingPage-content-plansSection-top {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.landingPage-content-plansSection-top-p {
+  color: #a4a9ad;
+}
+.landingPage-content-plansSection-cards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 2rem;
+}
+.landingPage-content-plansSection-card {
+  display: flex;
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+.landingPage-content-plansSection-card:hover {
+  transform: scale(1.05);
+}
+.landingPage-content-plansSection-card-duration {
+  font-weight: bold;
+  font-size: 27px;
+  margin-bottom: 0;
+}
+.landingPage-content-plansSection-card-desc {
+  font-size: 14px;
+}
+.landingPage-content-plansSection-card-button {
+  width: 100%;
+  background-color: #4caf4f;
+  border: none;
+  padding: 5px 20px;
+  /* outline: none; */
+  border-radius: 10px;
+}
+.landingPage-content-plansSection-card-button:focus {
+  outline: none;
+}
+.landingPage-content-footerSection {
+  height: 250px;
+  background-color: #e6e7eb;
+}
+
+.landingPage-content-footerSection-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  height: 70%;
+  /* background-color: red; */
+  border-bottom: 1px solid rgb(155, 155, 155);
+}
+.landingPage-content-footerSection-top-left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.landingPage-content-footerSection-top-right {
+  width: 30%;
+}
+.landingPage-content-footerSection-top-left-links-a {
+  margin-right: 1rem;
+}
+.landingPage-content-footerSection-bottom {
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.landingPage-content-footerSection-bottom-content {
+  /* height: 100%; */
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: #776ec0; */
+  margin-top: 1.8rem;
+}
+.landingPage-content-footerSection-bottom-left {
+  /* background-color: #4caf4f; */
+  width: 30%;
+  height: 39px;
+  /* margin-left: 43px; */
+}
+.landingPage-content-footerSection-bottom-right {
+  /* background-color: #4caf4f; */
+  width: 30%;
+  height: 39px;
+}
+.landingPage-content-footerSection-bottom-right-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+.landingPage-content-footerSection-top-right-inputAndButton {
+  display: flex;
+  gap: 1rem;
+}
+.landingPage-content-footerSection-top-right-input {
+  outline: none;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+.landingPage-content-footerSection-top-right-button {
+  font-size: 12px;
+  padding: 8px 30px;
+  background-color: #4caf4f;
+  outline: none;
+  border: none;
+  color: #fff;
+}
+.landingPage-content-nav-menuButton {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .landingPage-content-nav-right {
+    display: none;
+  }
+  .landingPage-content-nav {
+    justify-content: flex-start;
+    margin-left: 20px;
+    gap: 3rem;
+  }
+  .landingPage-content-heroSection-image {
+    display: none;
+  }
+  .landingPage-content-heroSection-text {
+    width: 100%;
+    padding: 10px;
+  }
+  .landingPage-content-heroSection-button {
+    width: 100%;
+  }
+  .landingPage-content-heroSection {
+    height: 397px;
+  }
+  .landingPage-content-plansSection-cards {
+    flex-direction: column;
+  }
+  .landingPage-content-plansSection-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .landingPage-content-plansSection {
+    height: auto;
+  }
+  .landingPage-content-footerSection-top-left {
+    width: 100%;
+    align-content: flex-start;
+  }
+  .landingPage-content-footerSection-top-right {
+    display: none;
+  }
+  .landingPage-content-footerSection-bottom-content {
+    margin-top: 0.8rem;
+  }
+  .landingPage-content-footerSection-bottom-right-links {
+    display: none;
+  }
+  .landingPage-content-footerSection-bottom-left {
+    width: 80%;
+    text-align: end;
+  }
+  .landingPage-content-navhambuger-menu {
+    margin: 0 auto;
+    height: 100%;
+    font-size: 28px;
+  }
+  .landingPage-content-nav-menuButton {
+    display: inline-block;
+  }
+}

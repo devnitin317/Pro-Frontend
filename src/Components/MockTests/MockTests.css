@@ -1,0 +1,113 @@
+.mockTest-main {
+  height: 100%;
+  width: 100%;
+  /* background-color: rgb(212, 171, 117); */
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap; */
+}
+.mockTest-content {
+  width: 95%;
+  height: 95%;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  /* justify-content: center; */
+  border: 1px solid rgb(184, 181, 181);
+  gap: 2rem;
+}
+.mockTest-content.disableProp {
+  width: 100%; /* or any specific width you want */
+  height: auto; /* or any specific height you want */
+  display: flex; /* if you want to keep the flex display */
+  flex-wrap: wrap; /* if you want to keep wrapping */
+  flex-direction: column; /* if you want to keep the column direction */
+  align-content: flex-start; /* or any alignment you prefer */
+  border: none; /* or any specific border you want */
+  gap: 0; /* or any specific gap you want */
+}
+.mockTest-content-heading {
+  text-align: center;
+}
+.mockTest-content-nav {
+  /* background-color: aqua; */
+  border: 1px solid aqua;
+  height: 50px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  border-radius: 10px;
+}
+.mockTest-content-nav-link {
+  cursor: pointer;
+}
+.mockTest-content-elements {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.mockTest-content-element {
+  background-color: rgb(144, 200, 200);
+  border-radius: 10px;
+  min-width: 250px;
+  text-align: center;
+  cursor: pointer;
+  height: 35px;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hideMockNav {
+  display: none;
+}
+@media screen and (max-width: 1050px) {
+  .mockTest-content-element {
+    min-width: 200px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .mockTest-content-nav {
+    height: 100px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    border-radius: 10px;
+  }
+  .hideMockNav {
+    display: none;
+  }
+  /* .mockTest-content-elements{
+    position: absolute;
+    top: 132px;
+  } */
+}
+@media screen and (max-width: 480px) {
+  .mockTest-content-element {
+    min-width: 100%;
+  }
+  .mockTest-content-nav {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 310px) {
+  .mockTest-content-nav {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+@media screen and (max-width: 270px) {
+  .mockTest-content-nav {
+    height: 120px;
+  }
+}

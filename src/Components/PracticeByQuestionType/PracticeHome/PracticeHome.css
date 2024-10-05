@@ -1,0 +1,58 @@
+.practiceHome-main{
+    height: auto;
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: center;
+}
+.practiceHome-main-content{
+    /* background-color: antiquewhite; */
+    height: 100%;
+    width: 95%;
+    padding: 10px;
+}
+.practiceHome-main-content-card{
+    min-height: 220px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px darkgrey;
+    padding: 10px;
+    margin-bottom: 1.3rem;
+}
+.practiceHome-main-content-card-links{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    justify-items: center;
+    margin-top: 1rem;
+    /* grid-auto-rows: minmax(100px, auto);  */
+}
+.practiceHome-main-content-card-links-p{
+    height: auto;
+    width: 206px;
+    background-color: rgb(144, 200, 200);;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 6px;
+}
+.practiceHome-main-content-card-links-p a{
+    text-decoration: none;
+    color: black;
+}
+@media (max-width: 600px) {
+    .practiceHome-main-content-card-links{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .practiceHome-main-content-card-links-p{
+        width: 150px;
+    }
+}
+@media (min-width: 600px) and (max-width: 820px) {
+    .practiceHome-main-content-card-links{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .practiceHome-main-content-card-links-p{
+        width: 180px;
+    }
+}

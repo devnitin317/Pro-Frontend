@@ -1,0 +1,115 @@
+.dashBoardHome-main{
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dashBoardHome-main-content{
+    height: 100%;
+    width: 95%;
+    /* background-color: rgb(194, 243, 243); */
+}
+.dashBoardHome-main-content-top{
+    height: 150px;
+    width: 100%;
+    /* background-color: rgb(226, 164, 88); */
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+    justify-content: space-around;
+}
+.dashBoardHome-main-content-top-ele{
+    
+    height: 120px;
+    width: 250px;
+    background-color: rgb(185 185 221);
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+.dashBoardHome-main-content-top-ele:nth-child(1) {
+    background-color: rgb(48, 213, 200); /* Light Red */
+}
+.dashBoardHome-main-content-top-ele:nth-child(2) {
+    background-color: rgb(185 185 221); /* Light Red */
+}.dashBoardHome-main-content-top-ele:nth-child(3) {
+    background-color:  rgb(255, 240, 245); /* Light Red */
+}.dashBoardHome-main-content-top-ele:nth-child(4) {
+    background-color: rgb(218, 165, 32)
+; /* Light Red */
+}
+.dashBoardHome-main-content-top-ele-content{
+    height: 70%;
+    width: 95%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.dashBoardHome-main-content-top-ele-heading,.dashBoardHome-main-content-top-ele-score{
+    font-family: "Source Serif 4", serif;
+    font-style: normal;
+}
+.dashBoardHome-main-content-middle{
+    display: flex;
+}
+.dashBoardHome-main-content-middle-daysPracticed{
+    height: 268px;
+    flex-grow: 1;
+    margin-left: 16px;
+    background-color: #60bfbf;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.dashBoardHome-main-content-middle-daysPracticed-content{
+    height: 70%;
+    width: 30%;
+    background-color: #d2e9b8;
+    border-radius: 10px;
+    margin-left: 40px;
+    padding: 10px;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+    font-family: "Source Serif 4", serif;
+    font-style: normal;
+}
+.dashBoardHome-main-content-middle-daysPracticed-content-p{
+    font-size: 25px;
+    text-align: center;
+}
+.dashBoardHome-main-content-middle-daysPracticed-content-span{
+    display: block;
+    font-size: 30px;
+    text-align: center;
+}
+@media screen and (max-width:500px) {
+    .dashBoardHome-main-content-top{
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .dashBoardHome-main-content-top-ele{
+        width: 100%;
+    }
+    .dashBoardHome-main-content-middle{
+        flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    }    
+    .dashBoardHome-main-content-middle-daysPracticed{
+width: 100%;
+margin-left: 0;
+    }
+    .dashBoardHome-main-content-middle-daysPracticed-content{
+        height: 80%;
+    width: 100%;
+    margin-left: 0;
+    }
+}

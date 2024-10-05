@@ -1,0 +1,84 @@
+.reading-main{
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reading-main-content{
+    height: 553px;
+    width: 90%;
+    /* background-color: aliceblue; */
+    padding: 10px;
+    border: 1px solid #f6f6f6;
+}
+.listening-Main-Content-Questions h2{
+    font-family: "Source Serif 4", serif;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.reading-main-content-QuestionsDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.reading-main-content-QuestionsDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.reading-main-content-questions{
+    min-height: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+}
+.reading-main-content-questions-Div{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+.reading-main-content-options li{
+    list-style-type: none;
+}
+.optionsLi input{
+    margin: 5px;
+}
+.reading-main-content-options div{
+    font-family: "Source Serif 4", serif;
+}
+.reading-main-content-options input{
+    margin: 5px;
+}
+.reading-main-content-options select{
+    margin: 2px;
+    font-size: 1rem;
+    border: 1px solid;
+    outline: none;
+    font-family: "Source Serif 4", serif;
+}
+.reading-main-content-options 
+.reading-main-content-next{
+    /* margin-top: 10rem;
+    border: 1px solid grey;
+    margin-bottom: 2rem;
+    padding: 10px; */
+}
+.reading-main-content-QuestionsDiv-P,.reading-main-content-question{
+    font-family: "Source Serif 4", serif;
+    font-style: italic;
+}
+.reading-main-content-paragraph, .reading-main-content-options label{
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+@media (max-width: 500px) {
+    .reading-main-content{
+        height: auto;
+        width: 100%;
+    }
+}

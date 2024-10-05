@@ -1,0 +1,19 @@
+.speechToText-Main{
+  display: flex;
+  justify-content: center;
+}
+
+.speechToText-Content{
+  min-height: 150px;
+  width: 250px;
+  background-color: aliceblue;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid grey;
+}
+@media (max-width: 600px) {
+  .speechToText-Content{
+    min-height: 160px;
+
+  }
+}

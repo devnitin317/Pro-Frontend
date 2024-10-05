@@ -1,0 +1,49 @@
+.side-Nav{
+    position: fixed;
+    left: -5%;
+    top: 0%;
+    right: 0%;
+    bottom: 0;
+    background-color: #4caf4f;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45%;
+    flex-direction: column;
+    padding: 19px;
+    gap: 3rem;
+    border-radius: 7px;
+    animation: slideFromRight 1s ease forwards;
+    z-index: 1000;
+}
+
+@keyframes slideFromRight {
+    0%{
+        /* opacity: 0; */
+        transform: translateX(0%);
+    }
+    100%{
+        /* opacity: 1; */
+        transform: translateX(10%);
+
+    }
+}
+
+.side-nav-close-m{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.side-nav-links{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 60%;
+    gap: 2rem;
+}
+.side-nav-links a{
+    color: #fff;
+}

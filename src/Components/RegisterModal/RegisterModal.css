@@ -1,0 +1,77 @@
+.registerModal-main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.registerModal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+}
+/* .registerModal-content-body-form-group{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+.registerModal-content-body-form-button {
+  padding: 3px 71px;
+  background-color: #4caf4f;
+  border: none;
+  color: #fff;
+  outline: none;
+
+}
+.registerModal-content-body{
+  display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+/* .registerModal-content-body-form-button:hover{
+  outline: none;
+} */
+.registerModal-content-body-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.registerModal-content-body-form-inputAndlabel {
+  display: flex;
+  justify-content: space-between;
+}
+.registerModal-content-body-form-remeberlabel{
+  margin: 0;
+}
+.registerModal-content-body-form--remeberMe{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 5px;
+}
+/* .registerModal-content-body-form-inputAndError{
+  display: flex;
+  flex-direction: column;
+} */
+.registerModal-content-body-form-error {
+  font-size: 13px;
+  color: rgb(226, 78, 78);
+  width: 100%;
+  display: inline-block;
+  text-align: end;
+}
+.registerModal-content-body-haveAcount{
+  cursor: pointer;
+}
+.registerModal-content-body-haveAcount:hover{
+  text-decoration: underline;
+}

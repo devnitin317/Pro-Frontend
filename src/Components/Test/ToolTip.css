@@ -1,0 +1,21 @@
+.toolTip-Main{
+    height: 250px;
+    width: 250px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toolTip-Main-a{
+    position: relative;
+    height: 20px;
+    width: 200px;
+    overflow: hidden;
+    background-color: aqua; 
+}
+.toolTip-Main-a:hover::after{
+    content: attr(data-toolTip);
+    background-color: black;
+    color: white;
+    margin-left: 10px;
+}

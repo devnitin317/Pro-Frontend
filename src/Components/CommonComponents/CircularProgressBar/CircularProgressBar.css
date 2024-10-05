@@ -1,0 +1,40 @@
+:root{
+    --color1:#12c2e9;
+    --color2:#c471ed;
+    --color3:#f64f59;
+    
+  }
+  svg{
+    /* width: 30vw; */
+    margin-top: 30px;
+  }
+  .progressInput{
+    width: 30vw;
+    height: 7px;
+    -webkit-appearance:none;
+  
+    background-image: linear-gradient(
+      to right,
+      var(--color1),
+      var(--color2),
+      var(--color3),
+  
+    );
+  }
+  .circle-Background{
+  fill: none;
+  stroke: #ddd;
+  }
+  .circle-Progress{
+    fill: none;
+    /* stroke: var(--color1); */
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .circle-text-num{
+    font-size: 52px;
+  }
+  .circle-text{
+    font-size: large;
+    font-weight: bold;
+  }

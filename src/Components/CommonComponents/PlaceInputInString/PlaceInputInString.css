@@ -1,0 +1,41 @@
+.placeInputInString-main input,
+.placeInputInString-main-P,
+.fillUpOptions li {
+  font-family: "Source Serif 4", serif;
+  font-style: normal;
+}
+.placeInputInString-main-P input{
+    margin: 2px;
+    font-size: 1rem;
+    outline: none;
+    font-family: "Source Serif 4", serif;
+}
+.placeInputInString-main {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.fillUpOptions {
+  display: flex;
+  /* background-color: aqua; */
+  gap: 0.5rem;
+  /* height: 60px; */
+}
+.fillUpOptions li {
+  list-style-type: none;
+  border: 1px solid black;
+  cursor: grab;
+  background-color: antiquewhite;
+  padding: 5px;
+}
+@media (max-width: 915px) {
+  .fillUpOptions{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 400px) {
+  .fillUpOptions{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,110 @@
+.topNav-Main {
+  height: 100%;
+  width: 100%;
+  /* background-color: burlywood; */
+}
+.topNav-Content {
+  height: 100%;
+  width: 100%;
+}
+/* TopNav-Top starts */
+.topNav-Top {
+  display: flex;
+  /* background-color: azure; */
+  height: 8%;
+  align-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #f6f6f6;
+
+}
+.topNav-Top-Left {
+  display: flex;
+  gap: 2rem;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.topNav-Top-Menu-Btn {
+  padding: 0;
+  cursor: pointer;
+  /* background-color: grey; */
+}
+.topNav-Top-Menu-Btn > svg {
+  height: 23px;
+  width: auto;
+  margin: 0;
+}
+.topNav-Top-SearchBar {
+  /* background-color: green; */
+  border: 1px solid #dfdfdf;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 33px;
+  width: 248px;
+}
+.topNav-Top-SearchBar-Icon {
+  height: 100%;
+  width: 20%;
+  /* background-color: aqua; */
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.topNav-Top-SearchBar-Icon > svg {
+  height: 70%;
+  width: auto;
+  margin: 0;
+}
+.topNav-Top-SearchBar-Input {
+  height: 100%;
+  width: 80%;
+  border: none;
+  padding: 1px;
+  outline: none;
+}
+.topNav-Top-UserProfile {
+  /* background-color: aquamarine; */
+}
+.SideNavBar-Left-User-Img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.SideNavBar-Left-User-Img img {
+  width: 100%;
+  object-fit: cover;
+}
+/* TopNav-Top ends */
+
+.topNav-Bottom {
+  /* background-color: rgb(119, 174, 174); */
+  height: 92%;
+  overflow: scroll;
+    scroll-behavior: smooth;
+}
+@media (max-width: 600px) {
+  .toggleSideNav{
+    position: fixed;
+    z-index: 1000;
+    margin-left: 50vw;
+  }
+  .topNav-Top-SearchBar.addMargin{
+    margin-left: 55px;
+  }
+  .topNav-Top-Menu-Btn > svg {
+    height: 25px;
+    width: 25px;
+    margin: 0;
+    /* background-color: rgb(144, 200, 200); */
+
+  }
+  .topNav-Top-SearchBar-Input{
+    padding: 5px;
+    /* height: 100px; */
+  }
+}
