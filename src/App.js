@@ -66,7 +66,9 @@ function App() {
       return;
     }
     if (user !== null && user !== undefined) {
-      setPaymentVerified(user.paymentVerified);
+      // setPaymentVerified(user.paymentVerified);
+      setPaymentVerified(true);
+
       if (user.hasOwnProperty("email")) {
         dispatch(userDataFunc(user));
         setUserData(user);

@@ -529,7 +529,7 @@ const RegisterModal = ({ isOpen, close, title, loginStatus }) => {
                       for="email"
                       className="registerModal-content-body-form-label"
                     >
-                      Password
+                      Confirm Password
                     </label>
                     <input
                       type="password"
