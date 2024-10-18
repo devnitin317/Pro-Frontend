@@ -149,6 +149,7 @@ const RegisterModal = ({ isOpen, close, title, loginStatus }) => {
   }
   async function registerUser() {
     setShowSpinner(true);
+    setShowPopup(false)
     if (validateInput()) {
       // Proceed with form submission
 
@@ -212,7 +213,7 @@ const RegisterModal = ({ isOpen, close, title, loginStatus }) => {
 
       setError({});
     }
-
+    // setShowPopup(false)
     // onClose();
 
     // setFormData(init);
@@ -548,9 +549,9 @@ const RegisterModal = ({ isOpen, close, title, loginStatus }) => {
                   )}
                 </div>
                 <input
-                  name="login"
-                  id="login"
-                  className="registerModal-content-body-form-input"
+                  name="register"
+                  id="registere"
+                  className="registerModal-content-body-form-button"
                   type="button"
                   value="Register"
                   onClick={registerUser}

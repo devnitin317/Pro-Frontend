@@ -71,6 +71,7 @@
 }
 .registerModal-content-body-haveAcount{
   cursor: pointer;
+  color: blue;
 }
 .registerModal-content-body-haveAcount:hover{
   text-decoration: underline;
