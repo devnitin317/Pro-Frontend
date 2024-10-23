@@ -4,7 +4,7 @@ import CountDown from "../Countdown/Countdown";
 import { useSelector } from "react-redux";
 import ProgressBarSynthesisAudio from "../ProgressBarSynthesisAudio/ProgressBarSynthesisAudio";
 import MusicBars from "../MusicBars/MusicBars";
-function TextToSpeech({ text, onAudioEnds }) {
+function TextToSpeech({ text, onAudioEnds,countDuration }) {
   let data = text;
   const [volume, setVolume] = useState(1);
   const[showMusicBars,setShowMusicBars] = useState(false)
@@ -14,7 +14,7 @@ function TextToSpeech({ text, onAudioEnds }) {
 
   const countDown = useSelector((state) => state.countDown);
 
-  let count = CountDown(5, countDown.active, countDown.reset);
+  let count = CountDown(countDuration || 5, countDown.active, countDown.reset);
 
   useEffect(() => {
     handleStop();

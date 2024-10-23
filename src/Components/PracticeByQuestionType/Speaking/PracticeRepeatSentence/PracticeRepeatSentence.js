@@ -92,8 +92,9 @@ function PracticeRepeatSentence() {
               <TextToSpeech
                 text={questions[currentQuestion].text}
                 onAudioEnds={onAudioEnds}
+                countDuration={3}
               />
-              {audioEnds ? <SpeechToText /> : <></>}
+              {audioEnds ? <SpeechToText duration={15} countDuration={3}/> : <></>}
             </div>
             <div>
               {showAnswer == true ? (

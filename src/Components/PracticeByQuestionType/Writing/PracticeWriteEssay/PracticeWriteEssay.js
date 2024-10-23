@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import "./PracticeWriteEssay.css";
 import QuestionsFrontPage from "../../../CommonComponents/QuestionsFrontPage/QuestionsFrontPage";
 import axios from "axios";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import Spinner from "../../../CommonComponents/Spinner/Spinner";
 import ResultModal from "../../../CommonComponents/ResultModal/ResultModal";
+import CountDown from "../../../CommonComponents/Countdown/Countdown";
+import { resetCountDown } from "../../../CommonComponents/Countdown/countDownSlice";
 function PracticeWriteEssay() {
   // let ques = [
   //     {
@@ -30,7 +32,10 @@ function PracticeWriteEssay() {
   const [showResultModal, setShowResultModal] = useState(false);
   const [result, setResult] = useState(0);
   const baseUrl = useSelector((state) => state.app.baseUrl);
+  const countDown = useSelector((state) => state.countDown);
+  let dispatch = useDispatch();
 
+  let count = CountDown(600, countDown.active, countDown.reset);
   useEffect(() => {
     getQuestionsFunc();
   }, []);
@@ -39,7 +44,8 @@ function PracticeWriteEssay() {
     setSummary(event.target.value);
   };
 
-  const nextQuestion = () => {
+  const nextQuestion = (questionId) => {
+    dispatch(resetCountDown({ reset: `PracticeWriteEssay${questionId}` }));
     setSummary("");
     setCurrentQuestion(currentQuestion + 1);
   };
@@ -80,7 +86,22 @@ function PracticeWriteEssay() {
       if (currentQuestion < questions.length) {
         return (
           <div className="summariseWrittenText-main-content-questions">
-            <h2>Question {currentQuestion + 1}</h2>
+            <div className="practiceReadAloud-main-content-question-no-timer">
+              <h2 className="practiceReadAloud-main-content-question-no">
+                Question {currentQuestion + 1}
+              </h2>
+              <p className="practiceReadAloud-main-content-question-timer">
+                {/* Time : <Timer id={currentQuestion} /> */}
+                Time :{" "}
+                <span>
+                  {Math.floor((count.seconds % 3600) / 60)
+                    .toString()
+                    .padStart(2, "0")}
+                  :
+                </span>
+                <span>{(count.seconds % 60).toString().padStart(2, "0")}</span>
+              </p>
+            </div>
             {questions[currentQuestion].heading !== "" ? (
               <div className="summariseWrittenText-main-content-QuestionsDiv">
                 <p className="summariseWrittenText-main-content-QuestionsDiv-P">
@@ -106,6 +127,7 @@ function PracticeWriteEssay() {
                 placeholder="Write your summary here..."
                 rows={5}
                 cols={40}
+                disabled={count.seconds === 0 ? true : false}
               />
               <br />
             </div>
@@ -130,22 +152,22 @@ function PracticeWriteEssay() {
   }
   function submitTest(params) {
     setShowSpinner(true);
-let dataToSend= {summary, moduleType:"essay"}
+    let dataToSend = { summary, moduleType: "essay" };
     axios
-    .post(`${baseUrl}api/user/checkSummaryResult`, dataToSend)
-    .then((d) => {
-      console.log(d);
-      setResult(d.data);
-      setShowResultModal(true)
-      setShowSpinner(false);
-    })
-    .catch((e) => {
-      setShowSpinner(false);
-      console.log(e);
-    });
+      .post(`${baseUrl}api/user/checkSummaryResult`, dataToSend)
+      .then((d) => {
+        console.log(d);
+        setResult(d.data);
+        setShowResultModal(true);
+        setShowSpinner(false);
+      })
+      .catch((e) => {
+        setShowSpinner(false);
+        console.log(e);
+      });
   }
   function closeFunc() {
-    setShowResultModal(false)
+    setShowResultModal(false);
   }
   return (
     <div className="summariseWrittenText-main">

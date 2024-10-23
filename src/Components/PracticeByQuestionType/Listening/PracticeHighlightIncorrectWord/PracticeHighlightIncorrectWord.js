@@ -569,7 +569,7 @@ function PracticeHighlightIncorrectWord() {
               <p className="practiceReadAloud-main-content-question-heading">
                 {questions[currentQuestion].heading}
               </p>
-              <TextToSpeech text={questions[currentQuestion].text} />
+              <TextToSpeech countDuration={10} text={questions[currentQuestion].text} />
               <p className="practiceReadAloud-main-content-question-para">
                 <HighLightInCorrectWord
                   questionId={questions[currentQuestion].questionId}

@@ -863,7 +863,7 @@ function PracticeMCQMultipleAnswer() {
               <p className="practiceReadAloud-main-content-question-heading">
                 {questions[currentQuestion].heading}
               </p>
-              <TextToSpeech text={questions[currentQuestion].text} />
+              <TextToSpeech countDuration={8} text={questions[currentQuestion].text} />
               <p className="practiceReadAloud-main-content-question-para">
                 {questions[currentQuestion].heading2}
               </p>

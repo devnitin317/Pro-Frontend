@@ -69,7 +69,7 @@ function PracticeDescribeImage() {
                   </div>
                 </div>
                 <div className="describeImage-RecordAnswer">
-                  <SpeechToText />
+                  <SpeechToText duration={40} countDuration={25}/>
                 </div>
               </div>
             </div>

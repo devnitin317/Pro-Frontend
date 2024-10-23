@@ -7,6 +7,7 @@ import "./PracticeReOrder.css";
 import DragAndDrop from "../../../CommonComponents/DragAndDrop/DragAndDrop";
 import QuestionsFrontPage from "../../../CommonComponents/QuestionsFrontPage/QuestionsFrontPage";
 import axios from "axios";
+import Timer from "../../../CommonComponents/Timer/Timer";
 function PracticeReOrder() {
   // let ques = [
   //   {
@@ -109,9 +110,12 @@ function PracticeReOrder() {
         return (
           <div className="practiceReadAloud-main-content-questions">
             <div className="practiceReadAloud-main-content-question">
-              <h2 className="practiceReadAloud-main-content-question-no">
-                Question {currentQuestion + 1}
-              </h2>
+            <div className="practiceReadAloud-main-content-question-no-timer">
+                <h2 className="practiceReadAloud-main-content-question-no">
+                  Question {currentQuestion + 1}
+                </h2>
+                <p className="practiceReadAloud-main-content-question-timer">Time : <Timer id={currentQuestion}/></p>
+              </div>
               <p className="practiceReadAloud-main-content-question-heading">
                 {questions[currentQuestion].heading}
               </p>

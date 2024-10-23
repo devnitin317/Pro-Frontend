@@ -92,8 +92,9 @@ function PracticeShortAnswer() {
                 <TextToSpeech
                   text={questions[currentQuestion].text}
                   onAudioEnds={onAudioEnds}
+                  countDuration={3}
                 />
-                {audioEnds ? <SpeechToText /> : <></>}
+                {audioEnds ? <SpeechToText duration={40} countDuration={3}/> : <></>}
               </div>
             </div>
             {showAnswer == true ? (

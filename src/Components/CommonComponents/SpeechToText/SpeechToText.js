@@ -9,13 +9,13 @@ import './SpeechToText.css'
 import CountDown from "../Countdown/Countdown";
 import CountdownWithProgressBar from "../ProgressBar/CountdownWithProgressBar";
 
-function SpeechToText({duration}) {
+function SpeechToText({duration,countDuration}) {
   const dispatch = useDispatch();
   const countDown = useSelector((state) => state.countDown);
   // const recording = useSelector((state) => state.recording);
 
 
-  let count = CountDown(10,countDown.active,countDown.reset)
+  let count = CountDown(countDuration || 10,countDown.active,countDown.reset)
 
   return (
     <div className="speechToText-Main">

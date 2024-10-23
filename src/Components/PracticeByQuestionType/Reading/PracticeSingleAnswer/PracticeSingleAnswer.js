@@ -6,6 +6,7 @@ import { resetCountDown } from "../../../CommonComponents/Countdown/countDownSli
 import "./PracticeSingleAnswer.css";
 import QuestionsFrontPage from "../../../CommonComponents/QuestionsFrontPage/QuestionsFrontPage";
 import axios from "axios";
+import Timer from "../../../CommonComponents/Timer/Timer";
 function PracticeSingleAnswer() {
   // let ques = [
   //   {
@@ -93,9 +94,12 @@ function PracticeSingleAnswer() {
         return (
           <div className="practiceReadAloud-main-content-questions">
             <div className="practiceReadAloud-main-content-question">
-              <h2 className="practiceReadAloud-main-content-question-no">
-                Question {currentQuestion + 1}
-              </h2>
+              <div className="practiceReadAloud-main-content-question-no-timer">
+                <h2 className="practiceReadAloud-main-content-question-no">
+                  Question {currentQuestion + 1}
+                </h2>
+                <p className="practiceReadAloud-main-content-question-timer">Time : <Timer id={currentQuestion}/></p>
+              </div>
               <p className="practiceReadAloud-main-content-question-heading">
                 {questions[currentQuestion].heading}
               </p>

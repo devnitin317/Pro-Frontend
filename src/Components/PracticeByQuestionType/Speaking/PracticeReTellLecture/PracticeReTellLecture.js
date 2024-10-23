@@ -101,6 +101,7 @@ function PracticeReTellLecture() {
                     <TextToSpeech
                       text={questions[currentQuestion].text}
                       onAudioEnds={onAudioEnds}
+                      countDuration={3}
                     />
                   </div>
                   <div className="reTellLecture-recording">

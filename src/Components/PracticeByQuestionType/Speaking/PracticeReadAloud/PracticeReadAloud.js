@@ -100,7 +100,7 @@ function PracticeReadAloud() {
               <p className="practiceReadAloud-main-content-question-heading">
                 {questions[currentQuestion].heading}
               </p>
-              <SpeechToText duration={40} />
+              <SpeechToText duration={40} countDuration={35}/>
               <p className="practiceReadAloud-main-content-question-para">
                 {questions[currentQuestion].paragraph}
               </p>

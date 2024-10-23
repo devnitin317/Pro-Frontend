@@ -91,7 +91,7 @@ function PracticeWriteFromDictation() {
 
                 <div className="listening-Main-Content-QuestionsDiv-Audio-Div">
                   <div className="listening-Main-Content-QuestionsDiv-Audio-Div-Content">
-                    <TextToSpeech text={questions[currentQuestion].text} />
+                    <TextToSpeech countDuration={8} text={questions[currentQuestion].text} />
                   </div>
                 </div>
                 <div className="listening-Main-Content-QuestionsDiv-Options">
